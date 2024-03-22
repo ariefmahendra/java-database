@@ -18,4 +18,14 @@ create table admin
 
 insert into admin(username, password) values ('arief','makananku');
 
-select * from admin where username = 'arief'; --' and password = 'salah';
+create table comments
+(
+    id serial,
+    email varchar(255) not null,
+    comment varchar(500),
+    primary key (id)
+);
+
+select * from comments;
+
+delete from comments;
