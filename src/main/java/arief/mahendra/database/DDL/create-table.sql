@@ -29,3 +29,13 @@ create table comments
 select * from comments;
 
 delete from comments;
+
+create table sample_time
+(
+    id serial primary key,
+    sample_date date,
+    sample_time time,
+    sample_timestamp timestamp
+);
+
+select * from sample_time;
